@@ -23,17 +23,14 @@ button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.serif{f
 .gallery{background:var(--paper)}.photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;margin-top:50px}.photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s}.photo:hover img{transform:scale(1.04)}.p1{grid-column:span 7;height:500px}.p2{grid-column:span 5;height:500px}.p3,.p4,.p5{grid-column:span 4;height:330px}.p6{grid-column:span 5;height:430px}.p7{grid-column:span 7;height:430px}.p8,.p9{grid-column:span 6;height:360px}
 .rsvp{background:var(--green);color:#fff}.rsvp .title{color:#fff}.rsvp .intro{color:#d7e0db}.form{max-width:700px;margin:45px auto 0}.choices{display:flex;gap:10px;margin:15px 0 28px}.choice{flex:1;border:1px solid #ffffff2b;background:#ffffff09;color:#fff;padding:14px;border-radius:2px;cursor:pointer}.choice.active{border-color:var(--gold2);background:#ffffff14}.field{margin:18px 0}.field label{display:block;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}.field input,.field textarea{width:100%;background:#ffffff08;border:1px solid #ffffff2b;color:#fff;padding:13px;outline:none}.field textarea{min-height:100px}.submit{width:100%;padding:14px;border:1px solid var(--gold2);background:transparent;color:var(--gold2);cursor:pointer;letter-spacing:.18em;text-transform:uppercase;font-size:10px}
 .wishes{background:var(--cream)}.wish-box{max-width:760px;margin:45px auto 0}.wish-list{min-height:100px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0;color:var(--muted);text-align:center;font-size:13px}.footer{background:#102d26;color:#dce4df;text-align:center;padding:65px 20px}.footer .script{font-size:56px;color:#fff}.footer p{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#9eada5}
-
-.person-placeholder{width:100%;height:100%;display:grid;place-items:center;font:110px "Great Vibes",cursive;color:var(--gold2);background:radial-gradient(circle at 50% 35%,#31584b,#173a31 55%,#102d26)}
-.story-placeholder{display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#31584b,#102d26 68%);color:var(--gold2);font:48px "Great Vibes",cursive;letter-spacing:.08em}
-.gallery-placeholder{grid-column:1/-1;min-height:300px;display:grid;place-items:center;text-align:center;border:1px solid var(--line);padding:40px;font:34px "Cormorant Garamond",serif;color:var(--green);background:#fffdf8}
-.gallery-placeholder span{display:block;font:12px "DM Sans",sans-serif;letter-spacing:.08em;color:var(--muted);margin-top:10px}
-
 .fade{opacity:0;transform:translateY(24px);transition:.8s ease}.fade.show{opacity:1;transform:none}
 @media(max-width:720px){.navlinks{display:none}.nav{padding:13px 15px}.hero-names{font-size:88px}.section{padding:78px 0}.family-grid{grid-template-columns:1fr}.person-photo{height:390px}.story-row{grid-template-columns:1fr;gap:25px}.story-row:nth-child(even) .story-photo{order:0}.story-photo{height:360px}.event{grid-template-columns:55px 1fr;gap:15px}.event-num{font-size:34px}.event h3{font-size:32px}.event-meta{grid-template-columns:1fr}.timer{grid-template-columns:1fr 1fr}.time:nth-child(2){border-right:0}.time:nth-child(-n+2){border-bottom:1px solid var(--line)}.photo-grid{grid-template-columns:1fr 1fr}.photo{grid-column:span 1!important;height:280px!important}.p1,.p2{grid-column:span 2!important;height:370px!important}}
+
+.open-screen{position:fixed;inset:0;z-index:9999;background:var(--green);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;transition:opacity .7s ease,visibility .7s ease}.open-screen.hide{opacity:0;visibility:hidden;pointer-events:none}.open-card{padding:30px 24px;max-width:520px}.open-script{font:clamp(54px,12vw,92px) "Great Vibes",cursive;color:#e8d5a9;margin:0 0 8px}.open-sub{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#d9c28d;margin-bottom:28px}.open-button{border:1px solid #e8d5a9;background:transparent;color:#fff;padding:14px 26px;border-radius:999px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer}.open-button:hover{background:#ffffff12}
 </style>
 </head>
 <body>
+<div class="open-screen" id="openScreen"><div class="open-card"><div class="open-script">Vinu & Aleena</div><div class="open-sub">Wedding Invitation · 14 January 2027</div><button class="open-button" id="openInvitation">Open Invitation</button></div></div>
 <nav class="nav" id="nav">
   <div class="brand">V & A</div>
   <div class="navlinks"><a href="#family">Families</a><a href="#journey">Journey</a><a href="#events">Occasions</a><a href="#rsvp">RSVP</a><a href="#wishes">Wishes</a></div>
@@ -65,11 +62,11 @@ button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.serif{f
   <div class="center"><div class="eyebrow">— Meet Our Families —</div><h2 class="title">With love & blessings</h2></div>
   <div class="family-grid">
    <article class="person">
-    <div class="person-photo"><div class="person-placeholder">♡</div></div>
+    <div class="person-photo"><img src="./assets/photo-5.jpg" alt="Aleena"></div>
     <div class="person-info"><div class="person-letter">A</div><h3 class="person-name">Vinu Paul</h3><div class="label">Bride</div><p class="person-copy">With the loving blessings of her parents, <strong>Eldho Varghese & Bindu Eldho</strong>.</p><div class="bless">With love, prayers & blessings from family.</div></div>
    </article>
    <article class="person">
-    <div class="person-photo"><div class="person-placeholder">♡</div></div>
+    <div class="person-photo"><img src="./assets/photo-6.jpg" alt="Vinu"></div>
     <div class="person-info"><div class="person-letter">V</div><h3 class="person-name">Aleena Eldho</h3><div class="label">Groom</div><p class="person-copy">With the loving blessings of his parents, <strong>Paulose K.A. & Jincy Paulose</strong>.</p><div class="bless">With love, prayers & blessings from family.</div></div>
    </article>
   </div>
@@ -80,10 +77,10 @@ button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.serif{f
  <div class="container fade">
   <div class="center"><div class="eyebrow">— Our Journey —</div><h2 class="title">Moments that led us here</h2><p class="intro">We may not have a formal pre-wedding shoot, but we already have something better — real memories from our journey together.</p></div>
   <div class="timeline">
-   <article class="story-row"><div class="story-photo story-placeholder"><div>V&nbsp;&nbsp;♡&nbsp;&nbsp;A</div></div><div class="story-copy"><div class="eyebrow">Where our story begins</div><h3>Two paths, one beautiful journey</h3><p>Some of the most meaningful memories are the simple ones — the days we spent together, the laughter we shared and the moments that quietly brought us closer.</p></div></article>
-   <article class="story-row"><div class="story-photo story-placeholder"><div>V&nbsp;&nbsp;♡&nbsp;&nbsp;A</div></div><div class="story-copy"><div class="eyebrow">Growing together</div><h3>From moments to memories</h3><p>What started as time spent together became a collection of memories we will carry into the next chapter of our lives.</p></div></article>
-   <article class="story-row"><div class="story-photo story-placeholder"><div>V&nbsp;&nbsp;♡&nbsp;&nbsp;A</div></div><div class="story-copy"><div class="eyebrow">Our favourite part</div><h3>The little things</h3><p>It was never about perfect photographs. It was about the ordinary moments that became extraordinary because we experienced them together.</p></div></article>
-   <article class="story-row"><div class="story-photo story-placeholder"><div>V&nbsp;&nbsp;♡&nbsp;&nbsp;A</div></div><div class="story-copy"><div class="eyebrow">Forever begins</div><h3>And now, we choose forever</h3><p>With grateful hearts and the blessings of our families, we look forward to beginning this beautiful new chapter — together.</p></div></article>
+   <article class="story-row"><div class="story-photo"><img src="./assets/photo-1.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Where our story begins</div><h3>Two paths, one beautiful journey</h3><p>Some of the most meaningful memories are the simple ones — the days we spent together, the laughter we shared and the moments that quietly brought us closer.</p></div></article>
+   <article class="story-row"><div class="story-photo"><img src="./assets/photo-3.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Growing together</div><h3>From moments to memories</h3><p>What started as time spent together became a collection of memories we will carry into the next chapter of our lives.</p></div></article>
+   <article class="story-row"><div class="story-photo"><img src="./assets/photo-8.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Our favourite part</div><h3>The little things</h3><p>It was never about perfect photographs. It was about the ordinary moments that became extraordinary because we experienced them together.</p></div></article>
+   <article class="story-row"><div class="story-photo"><img src="./assets/photo-9.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Forever begins</div><h3>And now, we choose forever</h3><p>With grateful hearts and the blessings of our families, we look forward to beginning this beautiful new chapter — together.</p></div></article>
   </div>
  </div>
 </section>
@@ -107,7 +104,12 @@ button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.serif{f
 
 <section class="section gallery">
  <div class="container fade"><div class="center"><div class="eyebrow">— Our Moments —</div><h2 class="title">Before forever</h2><p class="intro">The photographs we already have — the memories that are already ours.</p></div>
-  <div class="photo-grid"><div class="gallery-placeholder">Our photographs will be added here soon<br><span>For now, enjoy the invitation & music.</span></div></div>
+  <div class="photo-grid">
+   <div class="photo p1"><img src="./assets/photo-2.jpg" alt="Vinu and Aleena"></div><div class="photo p2"><img src="./assets/photo-1.jpg" alt="Vinu and Aleena"></div>
+   <div class="photo p3"><img src="./assets/photo-3.jpg" alt="Memory"></div><div class="photo p4"><img src="./assets/photo-4.jpg" alt="Memory"></div><div class="photo p5"><img src="./assets/photo-5.jpg" alt="Memory"></div>
+   <div class="photo p6"><img src="./assets/photo-6.jpg" alt="Memory"></div><div class="photo p7"><img src="./assets/photo-7.jpg" alt="Memory"></div>
+   <div class="photo p8"><img src="./assets/photo-8.jpg" alt="Memory"></div><div class="photo p9"><img src="./assets/photo-9.jpg" alt="Memory"></div>
+  </div>
  </div>
 </section>
 
@@ -136,7 +138,7 @@ button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.serif{f
 const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50));
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});document.querySelectorAll('.fade').forEach(x=>io.observe(x));
 const target=new Date('2027-01-14T14:00:00+05:30');function clock(){let x=Math.max(0,target-new Date()),s=Math.floor(x/1000);d.textContent=Math.floor(s/86400);h.textContent=String(Math.floor(s%86400/3600)).padStart(2,'0');m.textContent=String(Math.floor(s%3600/60)).padStart(2,'0');document.getElementById('s').textContent=String(s%60).padStart(2,'0')}clock();setInterval(clock,1000);
-const audio=new Audio('./assets/a-thousand-years.mp3');audio.loop=true;audio.volume=.38;musicBtn.onclick=async()=>{try{if(audio.paused){await audio.play();musicBtn.textContent='Ⅱ A Thousand Years'}else{audio.pause();musicBtn.textContent='♪ A Thousand Years'}}catch(e){musicBtn.textContent='♪ Tap again'}};
+const audio=new Audio('./assets/a-thousand-years.mp3');audio.loop=true;audio.volume=.38;const openScreen=document.getElementById('openScreen');const openInvitation=document.getElementById('openInvitation');openInvitation.onclick=async()=>{try{await audio.play();musicBtn.textContent='Ⅱ A Thousand Years';openScreen.classList.add('hide');document.body.style.overflow='auto';}catch(e){openScreen.classList.add('hide');document.body.style.overflow='auto';musicBtn.textContent='♪ Tap to play';}};musicBtn.onclick=async()=>{try{if(audio.paused){await audio.play();musicBtn.textContent='Ⅱ A Thousand Years'}else{audio.pause();musicBtn.textContent='♪ A Thousand Years'}}catch(e){musicBtn.textContent='♪ Tap to play'}};document.body.style.overflow='hidden';
 document.querySelectorAll('.choice').forEach(b=>b.onclick=()=>{document.querySelectorAll('.choice').forEach(x=>x.classList.remove('active'));b.classList.add('active')});
 rsvpForm.onsubmit=e=>{e.preventDefault();rsvpForm.style.display='none';rsvpDone.style.display='block';};
 wishForm.onsubmit=e=>{e.preventDefault();const n=wname.value.trim()||'A loved one',w=wish.value.trim();if(w){wishList.innerHTML='<strong>'+n+'</strong><br><br>“'+w.replace(/</g,'&lt;')+'”';wishForm.reset()}};
