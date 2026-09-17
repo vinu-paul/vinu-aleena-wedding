@@ -3,196 +3,287 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#173a31">
+<meta name="theme-color" content="#f7f3eb">
 <title>Vinu & Aleena — Wedding Invitation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
-:root{--green:#173a31;--green2:#214e41;--cream:#f7f2e8;--paper:#fbf9f4;--gold:#b99a5c;--gold2:#d9c28d;--ink:#24332e;--muted:#6c746f;--line:#ddd2bd}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
-button,input,textarea{font:inherit}a{text-decoration:none;color:inherit}.serif{font-family:"Cormorant Garamond",serif}.script{font-family:"Great Vibes",cursive}
-.container{max-width:1060px;margin:auto;padding:0 22px}.section{padding:105px 0}.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:10px;color:var(--gold);font-weight:500}.title{font:400 clamp(42px,6vw,68px)/.95 "Cormorant Garamond",serif;color:var(--green);margin:12px 0 20px}.intro{max-width:700px;color:var(--muted);line-height:1.9;font-size:15px}
-.nav{position:fixed;z-index:50;top:0;left:0;right:0;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;color:white;transition:.35s}.nav.scrolled{background:#173a31ee;backdrop-filter:blur(12px)}.brand{font:28px "Great Vibes",cursive}.navlinks{display:flex;gap:22px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.music{border:1px solid #ffffff55;background:#ffffff12;color:#fff;border-radius:30px;padding:8px 13px;font-size:10px;letter-spacing:.08em;cursor:pointer}
-.hero{height:100svh;min-height:680px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#102a23}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.85)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0c241500 15%,#0c241544 45%,#0c2413dd 100%)}.hero-inner{position:relative;z-index:2;color:white;width:100%;padding-bottom:80px;text-align:center}.hero-kicker{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:#e8d5a9}.hero-names{font:400 clamp(82px,14vw,170px)/.76 "Great Vibes",cursive;margin:22px 0 22px;text-shadow:0 7px 28px #0007}.hero-names .and{font:400 .42em "Cormorant Garamond",serif;vertical-align:middle;margin:0 7px}.hero-date{font:500 11px "DM Sans",sans-serif;letter-spacing:.28em;text-transform:uppercase}.open{display:inline-flex;margin-top:30px;border:1px solid #fff8;border-radius:999px;padding:12px 20px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;backdrop-filter:blur(8px);background:#ffffff12}.scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:3;color:#fff9;font-size:9px;letter-spacing:.25em;text-transform:uppercase}
-.center{text-align:center}.center .intro{margin:auto}.rule{width:70px;height:1px;background:var(--gold);margin:26px auto}
-.family{background:var(--paper)}.family-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:50px}.person{border:1px solid var(--line);background:#fffdf8;padding:20px}.person-photo{height:420px;overflow:hidden}.person-photo img{width:100%;height:100%;object-fit:cover}.person-info{padding:25px 5px 10px}.person-letter{font:44px "Great Vibes",cursive;color:var(--gold)}.person-name{font:400 34px "Cormorant Garamond",serif;color:var(--green);margin:2px 0 8px}.label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.person-copy{font-size:13px;color:var(--muted);line-height:1.8}.bless{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
-.journey{background:var(--green);color:#fff}.journey .title{color:#fff}.journey .intro{color:#d7e0db}.timeline{margin-top:55px}.story-row{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;padding:45px 0;border-top:1px solid #ffffff22}.story-row:nth-child(even) .story-photo{order:2}.story-photo{height:430px;overflow:hidden}.story-photo img{width:100%;height:100%;object-fit:cover}.story-copy .eyebrow{color:var(--gold2)}.story-copy h3{font:400 42px/1 "Cormorant Garamond",serif;margin:10px 0 14px}.story-copy p{color:#d7e0db;line-height:1.9;font-size:14px}
-.events{background:var(--cream)}.event-list{margin-top:50px}.event{display:grid;grid-template-columns:90px 1fr;gap:28px;padding:38px 0;border-top:1px solid var(--line)}.event:last-child{border-bottom:1px solid var(--line)}.event-num{font:46px "Cormorant Garamond",serif;color:var(--gold)}.event h3{font:400 38px "Cormorant Garamond",serif;color:var(--green);margin:0 0 16px}.event-meta{display:grid;grid-template-columns:1fr 1fr;gap:25px}.meta-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}.meta-value{font-size:14px;line-height:1.7}.event a{display:inline-block;margin-top:18px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);border-bottom:1px solid var(--gold)}
-.countdown{background:var(--paper)}.timer{display:grid;grid-template-columns:repeat(4,1fr);max-width:760px;margin:45px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.time{padding:25px 8px;border-right:1px solid var(--line);text-align:center}.time:last-child{border:0}.time strong{display:block;font:500 46px "Cormorant Garamond",serif;color:var(--green)}.time span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.gallery{background:var(--paper)}.photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;margin-top:50px}.photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s}.photo:hover img{transform:scale(1.04)}.p1{grid-column:span 7;height:500px}.p2{grid-column:span 5;height:500px}.p3,.p4,.p5{grid-column:span 4;height:330px}.p6{grid-column:span 5;height:430px}.p7{grid-column:span 7;height:430px}.p8,.p9{grid-column:span 6;height:360px}
-.rsvp{background:var(--green);color:#fff}.rsvp .title{color:#fff}.rsvp .intro{color:#d7e0db}.form{max-width:700px;margin:45px auto 0}.choices{display:flex;gap:10px;margin:15px 0 28px}.choice{flex:1;border:1px solid #ffffff2b;background:#ffffff09;color:#fff;padding:14px;border-radius:2px;cursor:pointer}.choice.active{border-color:var(--gold2);background:#ffffff14}.field{margin:18px 0}.field label{display:block;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}.field input,.field textarea{width:100%;background:#ffffff08;border:1px solid #ffffff2b;color:#fff;padding:13px;outline:none}.field textarea{min-height:100px}.submit{width:100%;padding:14px;border:1px solid var(--gold2);background:transparent;color:var(--gold2);cursor:pointer;letter-spacing:.18em;text-transform:uppercase;font-size:10px}
-.wishes{background:var(--cream)}.wish-box{max-width:760px;margin:45px auto 0}.wish-list{min-height:100px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0;color:var(--muted);text-align:center;font-size:13px}.footer{background:#102d26;color:#dce4df;text-align:center;padding:65px 20px}.footer .script{font-size:56px;color:#fff}.footer p{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#9eada5}
-.fade{opacity:0;transform:translateY(24px);transition:.8s ease}.fade.show{opacity:1;transform:none}
-@media(max-width:720px){.navlinks{display:none}.nav{padding:13px 15px}.hero-names{font-size:88px}.section{padding:78px 0}.family-grid{grid-template-columns:1fr}.person-photo{height:390px}.story-row{grid-template-columns:1fr;gap:25px}.story-row:nth-child(even) .story-photo{order:0}.story-photo{height:360px}.event{grid-template-columns:55px 1fr;gap:15px}.event-num{font-size:34px}.event h3{font-size:32px}.event-meta{grid-template-columns:1fr}.timer{grid-template-columns:1fr 1fr}.time:nth-child(2){border-right:0}.time:nth-child(-n+2){border-bottom:1px solid var(--line)}.photo-grid{grid-template-columns:1fr 1fr}.photo{grid-column:span 1!important;height:280px!important}.p1,.p2{grid-column:span 2!important;height:370px!important}}
+:root{--bg:#f7f3eb;--ink:#1d2822;--muted:#687067;--line:#d9d5ca;--accent:#a78654;--white:#fffdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}button,a{font:inherit}a{color:inherit;text-decoration:none}
+.opening{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 35%,#fffdf8 0,#f7f3eb 55%,#ebe5d8 100%);display:grid;place-items:center;text-align:center;padding:24px;transition:opacity .7s,visibility .7s}.opening.hide{opacity:0;visibility:hidden;pointer-events:none}
+.opening-inner{max-width:520px}.small{letter-spacing:.25em;text-transform:uppercase;font-size:11px;color:var(--muted)}.monogram{font-family:"Great Vibes",cursive;font-size:78px;line-height:1;margin:25px 0 10px;color:var(--accent)}.opening h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:38px;margin:0}.opening p{color:var(--muted);margin:12px 0 28px}
+.open-btn{border:1px solid var(--ink);background:var(--ink);color:white;padding:15px 28px;border-radius:999px;letter-spacing:.16em;text-transform:uppercase;font-size:11px;cursor:pointer;transition:.25s}.open-btn:hover{background:#354139}
+.music-note{font-size:11px;color:var(--muted);margin-top:15px}
+header{position:sticky;top:0;z-index:20;background:rgba(247,243,235,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(217,213,202,.7)}nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 22px}.brand{font-family:"Cormorant Garamond",serif;font-size:25px}.links{display:flex;gap:25px;font-size:12px}.links a{color:var(--muted)}.menu{display:none;border:0;background:none;font-size:24px}
+main{overflow:hidden}.hero{min-height:88vh;display:grid;place-items:center;text-align:center;padding:80px 22px 70px}.hero .eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:11px;color:var(--muted)}.hero h1{font-family:"Great Vibes",cursive;font-size:clamp(68px,12vw,130px);font-weight:400;line-height:.9;margin:28px 0 20px;color:var(--ink)}.date{font-family:"Cormorant Garamond",serif;font-size:27px;letter-spacing:.08em}.count{display:flex;justify-content:center;gap:24px;margin-top:42px}.count div{min-width:62px}.num{font-family:"Cormorant Garamond",serif;font-size:31px;display:block}.lab{font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
+section{max-width:1000px;margin:auto;padding:90px 24px}.center{text-align:center}.rule{width:55px;height:1px;background:var(--accent);margin:18px auto}.section-label{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}h2{font-family:"Cormorant Garamond",serif;font-size:clamp(42px,6vw,66px);font-weight:500;line-height:1.05;margin:8px 0 24px}
+.parents{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:40px}.card{border-top:1px solid var(--line);padding:25px;text-align:center}.card h3{font-family:"Cormorant Garamond",serif;font-size:27px;margin:0 0 12px}.card p{margin:3px;color:var(--muted)}
+.story{max-width:700px;margin:auto;font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1.55;text-align:center}.signature{font-family:"Great Vibes",cursive;font-size:38px;color:var(--accent);margin-top:20px}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.event{border:1px solid var(--line);padding:30px 22px;text-align:center;background:rgba(255,253,248,.45)}.icon{font-size:28px}.event h3{font-family:"Cormorant Garamond",serif;font-size:29px;margin:12px 0}.event .time{font-size:12px;font-weight:600}.event p{font-size:13px;color:var(--muted);margin:10px 0 18px}.map{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--accent);padding-bottom:4px}
+.note{background:var(--ink);color:#f8f5ed;text-align:center;padding:70px 24px}.note h2{color:white}.note p{max-width:650px;margin:0 auto;color:#d9ddd7}
+footer{text-align:center;padding:55px 20px 75px}.footer-names{font-family:"Great Vibes",cursive;font-size:54px}.share{display:inline-block;margin-top:20px;border:1px solid var(--line);padding:12px 20px;border-radius:999px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.music{position:fixed;right:18px;bottom:18px;z-index:30;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--white);box-shadow:0 8px 25px #0001;cursor:pointer}
+@media(max-width:700px){.links{display:none}.menu{display:block}.hero{min-height:82vh}.parents,.events{grid-template-columns:1fr}.story{font-size:20px}.count{gap:13px}.count div{min-width:55px}}
 
-.open-screen{position:fixed;inset:0;z-index:9999;background:var(--green);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;transition:opacity .7s ease,visibility .7s ease}.open-screen.hide{opacity:0;visibility:hidden;pointer-events:none}.open-card{padding:30px 24px;max-width:520px}.open-script{font:clamp(54px,12vw,92px) "Great Vibes",cursive;color:#e8d5a9;margin:0 0 8px}.open-sub{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#d9c28d;margin-bottom:28px}.open-button{border:1px solid #e8d5a9;background:transparent;color:#fff;padding:14px 26px;border-radius:999px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer}.open-button:hover{background:#ffffff12}
-
-/* Elegant champagne glitter snowfall */
-.glitter-layer{
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:25;
-  overflow:hidden;
+/* Elegant pointer sparkle trail — no cursor icon */
+.pointer-spark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  background: radial-gradient(circle, rgba(255,239,190,.95) 0%, rgba(214,174,88,.65) 45%, rgba(214,174,88,0) 100%);
+  box-shadow: 0 0 8px rgba(214,174,88,.55);
+  transform: translate(-50%, -50%) scale(1);
+  animation: pointerSparkFade .75s ease-out forwards;
 }
-.glitter{
-  position:absolute;
-  top:-14px;
-  width:var(--size);
-  height:var(--size);
-  border-radius:50%;
-  background:rgba(255,248,220,.9);
-  box-shadow:0 0 7px rgba(255,235,170,.8);
-  opacity:var(--opacity);
-  animation:glitterFall var(--duration) linear infinite;
-  animation-delay:var(--delay);
+@keyframes pointerSparkFade {
+  0% { opacity: .9; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(.15) translateY(7px); }
 }
-@keyframes glitterFall{
-  0%{transform:translate3d(0,-20px,0) rotate(0deg);opacity:0}
-  12%{opacity:var(--opacity)}
-  50%{transform:translate3d(var(--drift),50vh,0) rotate(120deg)}
-  88%{opacity:var(--opacity)}
-  100%{transform:translate3d(calc(var(--drift) * -0.35),110vh,0) rotate(240deg);opacity:0}
+@media (pointer: coarse) {
+  .pointer-spark { display:none; }
 }
-@media(prefers-reduced-motion:reduce){
-  .glitter{animation:none;opacity:.18}
+@media (prefers-reduced-motion: reduce) {
+  .pointer-spark { display:none; }
 }
 
 </style>
+
+<style id="weather-atmosphere-styles">
+#weather-atmosphere{position:fixed;inset:0;pointer-events:none;z-index:25;overflow:hidden;opacity:0;transition:opacity 1.2s ease}
+#weather-atmosphere.active{opacity:1}
+.weather-sky{position:absolute;inset:0;transition:background 1.5s ease,opacity 1.5s ease;opacity:.35}
+.weather-moon{position:absolute;width:105px;height:105px;border-radius:50%;right:8vw;top:10vh;background:radial-gradient(circle at 35% 32%,#fffdf2 0 25%,#f5e8bc 50%,#d7c27d 100%);box-shadow:0 0 35px rgba(255,240,180,.45),0 0 90px rgba(255,230,150,.2);opacity:0;transform:scale(.8);transition:opacity 1.2s,transform 1.2s}
+.weather-moon:after{content:"";position:absolute;inset:12px 0 0 22px;border-radius:50%;background:rgba(110,92,62,.08);box-shadow:18px -4px 0 -9px rgba(110,92,62,.08),-10px 23px 0 -13px rgba(110,92,62,.07)}
+.weather-star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff7d8;box-shadow:0 0 8px #fff1ad;animation:starTwinkle 2.5s ease-in-out infinite}
+@keyframes starTwinkle{50%{opacity:.25;transform:scale(.55)}}
+.weather-drop{position:absolute;top:-20px;border-radius:50%;animation:weatherFall linear infinite}
+.weather-rain{width:1.5px;background:linear-gradient(transparent,rgba(220,240,255,.75));border-radius:2px}
+.weather-snow{width:7px;height:7px;background:rgba(255,255,255,.9);box-shadow:0 0 8px rgba(255,255,255,.55)}
+@keyframes weatherFall{to{transform:translate3d(var(--drift),110vh,0) rotate(180deg)}}
+.weather-cloud{position:absolute;border-radius:50%;filter:blur(8px);background:rgba(255,255,255,.12);animation:cloudMove linear infinite}
+@keyframes cloudMove{from{transform:translateX(-25vw)}to{transform:translateX(125vw)}}
+.weather-sun-glow{position:absolute;left:50%;top:28%;width:420px;height:420px;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,220,120,.18),transparent 68%);opacity:0;transition:opacity 1.2s}
+.weather-lightning{position:absolute;inset:0;background:rgba(255,255,255,.85);opacity:0}
+.weather-lightning.flash{animation:lightningFlash .45s ease-out}
+@keyframes lightningFlash{0%{opacity:0}12%{opacity:.22}22%{opacity:0}34%{opacity:.12}100%{opacity:0}}
+.weather-rain-dark{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,28,50,.22),rgba(10,18,32,.05));opacity:0;transition:opacity 1s}
+.cursor-spark{position:fixed;pointer-events:none;z-index:9999;width:7px;height:7px;border-radius:50%;background:#f7df9a;box-shadow:0 0 10px rgba(247,223,154,.9),0 0 18px rgba(247,223,154,.45);animation:cursorSpark .75s ease-out forwards}
+@keyframes cursorSpark{to{transform:translate(var(--x),var(--y)) scale(.05);opacity:0}}
+@media (max-width:700px){.weather-moon{width:72px;height:72px;right:9vw;top:9vh}.cursor-spark{display:none}}
+@media (prefers-reduced-motion:reduce){.weather-star,.weather-drop,.weather-cloud{animation:none!important}.weather-atmosphere{transition:none!important}}
+</style>
 </head>
 <body>
-<div class="glitter-layer" id="glitterLayer" aria-hidden="true"></div>
 
-<div class="open-screen" id="openScreen"><div class="open-card"><div class="open-script">Vinu & Aleena</div><div class="open-sub">Wedding Invitation · 14 January 2027</div><button class="open-button" id="openInvitation">Open Invitation</button></div></div>
-<nav class="nav" id="nav">
-  <div class="brand">V & A</div>
-  <div class="navlinks"><a href="#family">Families</a><a href="#journey">Journey</a><a href="#events">Occasions</a><a href="#rsvp">RSVP</a><a href="#wishes">Wishes</a></div>
-  <button class="music" id="musicBtn">♪ A Thousand Years</button>
-</nav>
-
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-kicker">— With joyful hearts —</div>
-    <h1 class="hero-names">Vinu <span class="and">&</span> Aleena</h1>
-    <div class="hero-date">14 January 2027 · 2:00 PM</div>
-    <a class="open" href="#invitation">Open invitation</a>
+<div class="opening" id="opening">
+  <div class="opening-inner">
+    <div class="small">A Wedding Invitation</div>
+    <div class="monogram">V & A</div>
+    <h1>Vinu & Aleena</h1>
+    <p>We would be honoured to have you with us as we begin our forever.</p>
+    <button class="open-btn" id="openBtn" type="button">Open Invitation</button>
+    <div class="music-note">♪ A Thousand Years</div>
   </div>
-  <div class="scroll">Scroll</div>
+</div>
+
+<audio id="music" preload="auto" loop>
+  <source src="assets/a-thousand-years.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+<nav>
+  <a class="brand" href="#top">V & A</a>
+  <div class="links">
+    <a href="#story">Story</a><a href="#where">When & Where</a><a href="#families">Families</a>
+  </div>
+  <button class="menu" onclick="document.getElementById('where').scrollIntoView()">☰</button>
+</nav>
 </header>
 
-<main id="invitation">
-<section class="section">
- <div class="container center fade">
-  <div class="eyebrow">— Wedding Invitation —</div>
-  <h2 class="title">Vinu & Aleena</h2><div class="rule"></div>
-  <p class="intro">Together with our families, we joyfully invite you to witness and bless our union as we begin this beautiful journey together.</p>
-  <p class="intro" style="margin-top:16px">Our celebrations begin with our Engagement, followed by our Wedding Ceremony and Reception. We would be delighted to have you join us in these special moments.</p>
- </div>
-</section>
-
-<section class="section family" id="family">
- <div class="container fade">
-  <div class="center"><div class="eyebrow">— Meet Our Families —</div><h2 class="title">With love & blessings</h2></div>
-  <div class="family-grid">
-   <article class="person">
-    <div class="person-photo"><img src="./assets/photo-5.jpg" alt="Aleena"></div>
-    <div class="person-info"><div class="person-letter">A</div><h3 class="person-name">Vinu Paul</h3><div class="label">Bride</div><p class="person-copy">With the loving blessings of her parents, <strong>Eldho Varghese & Bindu Eldho</strong>.</p><div class="bless">With love, prayers & blessings from family.</div></div>
-   </article>
-   <article class="person">
-    <div class="person-photo"><img src="./assets/photo-6.jpg" alt="Vinu"></div>
-    <div class="person-info"><div class="person-letter">V</div><h3 class="person-name">Aleena Eldho</h3><div class="label">Groom</div><p class="person-copy">With the loving blessings of his parents, <strong>Paulose K.A. & Jincy Paulose</strong>.</p><div class="bless">With love, prayers & blessings from family.</div></div>
-   </article>
+<main id="top">
+<section class="hero" id="hero">
+  <div>
+    <div class="eyebrow">We're getting married!</div>
+    <h1>Vinu & Aleena</h1>
+    <div class="date">14 · January · 2027</div>
+    <div class="count">
+      <div><span class="num" id="days">--</span><span class="lab">Days</span></div>
+      <div><span class="num" id="hours">--</span><span class="lab">Hrs</span></div>
+      <div><span class="num" id="mins">--</span><span class="lab">Min</span></div>
+      <div><span class="num" id="secs">--</span><span class="lab">Sec</span></div>
+    </div>
   </div>
- </div>
 </section>
 
-<section class="section journey" id="journey">
- <div class="container fade">
-  <div class="center"><div class="eyebrow">— Our Journey —</div><h2 class="title">Moments that led us here</h2><p class="intro">We may not have a formal pre-wedding shoot, but we already have something better — real memories from our journey together.</p></div>
-  <div class="timeline">
-   <article class="story-row"><div class="story-photo"><img src="./assets/photo-1.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Where our story begins</div><h3>Two paths, one beautiful journey</h3><p>Some of the most meaningful memories are the simple ones — the days we spent together, the laughter we shared and the moments that quietly brought us closer.</p></div></article>
-   <article class="story-row"><div class="story-photo"><img src="./assets/photo-3.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Growing together</div><h3>From moments to memories</h3><p>What started as time spent together became a collection of memories we will carry into the next chapter of our lives.</p></div></article>
-   <article class="story-row"><div class="story-photo"><img src="./assets/photo-8.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Our favourite part</div><h3>The little things</h3><p>It was never about perfect photographs. It was about the ordinary moments that became extraordinary because we experienced them together.</p></div></article>
-   <article class="story-row"><div class="story-photo"><img src="./assets/photo-9.jpg" alt="A shared memory"></div><div class="story-copy"><div class="eyebrow">Forever begins</div><h3>And now, we choose forever</h3><p>With grateful hearts and the blessings of our families, we look forward to beginning this beautiful new chapter — together.</p></div></article>
+<section id="families" class="center">
+  <div class="section-label">With the blessings of</div>
+  <h2>Our Families</h2><div class="rule"></div>
+  <div class="parents">
+    <div class="card"><h3>Aleena's Parents</h3><p>Eldho Varghese</p><p>Bindu Eldho</p></div>
+    <div class="card"><h3>Vinu's Parents</h3><p>Paulose KA</p><p>Jincy Paulose</p></div>
   </div>
- </div>
 </section>
 
-<section class="section events" id="events">
- <div class="container fade">
-  <div class="center"><div class="eyebrow">— The Occasions —</div><h2 class="title">Join us</h2><p class="intro">As we celebrate the beginning of our forever, we would love to share these special moments with you.</p></div>
-  <div class="event-list">
-   <article class="event"><div class="event-num">01</div><div><h3>Engagement</h3><div class="event-meta"><div><div class="meta-label">Date & Time</div><div class="meta-value">7 January 2027<br>12:30 PM</div></div><div><div class="meta-label">Venue</div><div class="meta-value">St Thomas Hall<br>Kothamangalam</div></div></div><a href="https://www.google.com/maps/search/?api=1&query=St+Thomas+Hall+Kothamangalam" target="_blank">Directions ↗</a></div></article>
-   <article class="event"><div class="event-num">02</div><div><h3>Wedding Ceremony</h3><div class="event-meta"><div><div class="meta-label">Date & Time</div><div class="meta-value">14 January 2027<br>2:00 PM</div></div><div><div class="meta-label">Venue</div><div class="meta-value">Morakala Church<br>Address to be added</div></div></div><a href="https://www.google.com/maps/search/?api=1&query=Morakala+Church" target="_blank">Directions ↗</a></div></article>
-   <article class="event"><div class="event-num">03</div><div><h3>Wedding Reception</h3><div class="event-meta"><div><div class="meta-label">Date & Time</div><div class="meta-value">14 January 2027<br>7:00 PM</div></div><div><div class="meta-label">Venue</div><div class="meta-value">Eden Convention Centre<br>Valakom, Muvattupuzha, Ernakulam, Kerala</div></div></div><a href="https://www.google.com/maps/search/?api=1&query=Eden+Convention+Centre+Valakom+Muvattupuzha+Ernakulam+Kerala" target="_blank">Directions ↗</a></div></article>
+<section id="story" class="center">
+  <div class="section-label">Our Story</div>
+  <h2>A journey to forever</h2><div class="rule"></div>
+  <div class="story">
+    It was never about having the perfect photographs. It was about the little moments we shared along the way — spontaneous pictures, journeys, laughter, ordinary days and memories that slowly became our favourite ones.
+    <br><br>
+    Somewhere along that journey, two separate paths became one. And now, surrounded by the people we love, we are ready to begin our next chapter together.
+    <div class="signature">Vinu & Aleena</div>
   </div>
- </div>
 </section>
 
-<section class="section countdown">
- <div class="container center fade"><div class="eyebrow">— Until we say “I do” —</div><h2 class="title">The countdown</h2>
-  <div class="timer"><div class="time"><strong id="d">--</strong><span>Days</span></div><div class="time"><strong id="h">--</strong><span>Hours</span></div><div class="time"><strong id="m">--</strong><span>Minutes</span></div><div class="time"><strong id="s">--</strong><span>Seconds</span></div></div>
- </div>
-</section>
-
-<section class="section gallery">
- <div class="container fade"><div class="center"><div class="eyebrow">— Our Moments —</div><h2 class="title">Before forever</h2><p class="intro">The photographs we already have — the memories that are already ours.</p></div>
-  <div class="photo-grid">
-   <div class="photo p1"><img src="./assets/photo-2.jpg" alt="Vinu and Aleena"></div><div class="photo p2"><img src="./assets/photo-1.jpg" alt="Vinu and Aleena"></div>
-   <div class="photo p3"><img src="./assets/photo-3.jpg" alt="Memory"></div><div class="photo p4"><img src="./assets/photo-4.jpg" alt="Memory"></div><div class="photo p5"><img src="./assets/photo-5.jpg" alt="Memory"></div>
-   <div class="photo p6"><img src="./assets/photo-6.jpg" alt="Memory"></div><div class="photo p7"><img src="./assets/photo-7.jpg" alt="Memory"></div>
-   <div class="photo p8"><img src="./assets/photo-8.jpg" alt="Memory"></div><div class="photo p9"><img src="./assets/photo-9.jpg" alt="Memory"></div>
+<section id="where" class="center">
+  <div class="section-label">When & Where</div>
+  <h2>The Celebrations</h2><div class="rule"></div>
+  <div class="events">
+    <article class="event">
+      <div class="icon">💍</div><h3>Engagement</h3>
+      <div class="time">7 January 2027 · 12:30 PM</div>
+      <p>St Thomas Hall<br>Kothamangalam</p>
+      <a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=St+Thomas+Hall+Kothamangalam">Get Directions</a>
+    </article>
+    <article class="event">
+      <div class="icon">⛪</div><h3>Holy Matrimony</h3>
+      <div class="time">14 January 2027 · 2:00 PM</div>
+      <p>Morakala Church</p>
+      <a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Morakala+Church">Get Directions</a>
+    </article>
+    <article class="event">
+      <div class="icon">🥂</div><h3>Reception</h3>
+      <div class="time">14 January 2027 · 7:00 PM</div>
+      <p>Edens</p>
+      <a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Edens+Kothamangalam">Get Directions</a>
+    </article>
   </div>
- </div>
 </section>
 
-<section class="section rsvp" id="rsvp">
- <div class="container fade"><div class="center"><div class="eyebrow">— Your Presence —</div><h2 class="title">We'd love to have you with us</h2><p class="intro">Kindly let us know if you'll be joining us. We'd love to celebrate these moments together.</p></div>
-  <form class="form" id="rsvpForm">
-   <div class="field"><label>1 · Will you be attending?</label><div class="choices"><button type="button" class="choice active" data-choice="yes">Yes, I'll join</button><button type="button" class="choice" data-choice="no">Can't make it</button></div></div>
-   <div class="field"><label>Your name</label><input id="rname" required placeholder="e.g. John Mathew"></div>
-   <div class="field"><label>A word for the couple · optional</label><textarea id="rmsg" placeholder="Write a little message..."></textarea></div>
-   <button class="submit" type="submit">Confirm RSVP</button>
-  </form>
-  <div id="rsvpDone" style="display:none;text-align:center;margin-top:30px"><div class="script" style="font-size:58px;color:#d9c28d">Thank you!</div><p>We've received your response with love.</p></div>
- </div>
-</section>
-
-<section class="section wishes" id="wishes">
- <div class="container fade"><div class="center"><div class="eyebrow">— Wishes & Blessings —</div><h2 class="title">Words from loved ones</h2><p class="intro">Leave a little blessing for Vinu & Aleena.</p></div>
-  <div class="wish-box"><div class="wish-list" id="wishList">✨ Be the first to leave a blessing.</div><form id="wishForm" style="margin-top:25px"><div class="field"><label>Your name</label><input id="wname" placeholder="Your name"></div><div class="field"><label>Your blessing</label><textarea id="wish" placeholder="Your message"></textarea></div><button class="submit" type="submit" style="border-color:var(--gold);color:var(--green)">Send blessing 🤍</button></form></div>
- </div>
+<section class="note">
+  <div class="section-label">A special invitation</div>
+  <h2>Come celebrate with us</h2>
+  <p>Your presence, love and blessings will make these moments even more meaningful as we begin our life together.</p>
 </section>
 </main>
 
-<footer class="footer"><div class="script">Vinu & Aleena</div><p>With love & gratitude · 14 January 2027</p></footer>
+<footer>
+  <div class="footer-names">Vinu & Aleena</div>
+  <div>14 January 2027 · Kerala</div>
+  <a class="share" target="_blank" href="https://wa.me/?text=You're%20invited%20to%20celebrate%20the%20wedding%20of%20Vinu%20%26%20Aleena%20on%2014%20January%202027.%20https%3A%2F%2Fvinu-paul.github.io%2Fvinu-aleena-wedding%2F">Share via WhatsApp</a>
+</footer>
+
+<button class="music" id="musicBtn" aria-label="Pause music">♫</button>
 
 <script>
-const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50));
-const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});document.querySelectorAll('.fade').forEach(x=>io.observe(x));
-const target=new Date('2027-01-14T14:00:00+05:30');function clock(){let x=Math.max(0,target-new Date()),s=Math.floor(x/1000);d.textContent=Math.floor(s/86400);h.textContent=String(Math.floor(s%86400/3600)).padStart(2,'0');m.textContent=String(Math.floor(s%3600/60)).padStart(2,'0');document.getElementById('s').textContent=String(s%60).padStart(2,'0')}clock();setInterval(clock,1000);
-const audio=new Audio('./assets/a-thousand-years.mp3');audio.loop=true;audio.volume=.38;const openScreen=document.getElementById('openScreen');const openInvitation=document.getElementById('openInvitation');openInvitation.onclick=async()=>{try{await audio.play();musicBtn.textContent='Ⅱ A Thousand Years';openScreen.classList.add('hide');document.body.style.overflow='auto';}catch(e){openScreen.classList.add('hide');document.body.style.overflow='auto';musicBtn.textContent='♪ Tap to play';}};musicBtn.onclick=async()=>{try{if(audio.paused){await audio.play();musicBtn.textContent='Ⅱ A Thousand Years'}else{audio.pause();musicBtn.textContent='♪ A Thousand Years'}}catch(e){musicBtn.textContent='♪ Tap to play'}};document.body.style.overflow='hidden';
-document.querySelectorAll('.choice').forEach(b=>b.onclick=()=>{document.querySelectorAll('.choice').forEach(x=>x.classList.remove('active'));b.classList.add('active')});
-rsvpForm.onsubmit=e=>{e.preventDefault();rsvpForm.style.display='none';rsvpDone.style.display='block';};
-wishForm.onsubmit=e=>{e.preventDefault();const n=wname.value.trim()||'A loved one',w=wish.value.trim();if(w){wishList.innerHTML='<strong>'+n+'</strong><br><br>“'+w.replace(/</g,'&lt;')+'”';wishForm.reset()}};
+const audio=document.getElementById('music');
+const opening=document.getElementById('opening');
+const openBtn=document.getElementById('openBtn');
+const musicBtn=document.getElementById('musicBtn');
+openBtn.addEventListener('click', ()=>{opening.classList.add('hide');try{audio.play().then(()=>{musicBtn.textContent='♫';}).catch(()=>{musicBtn.textContent='♫';});}catch(e){musicBtn.textContent='♫';}});
+musicBtn.addEventListener('click', async ()=>{try{if(audio.paused){await audio.play();musicBtn.textContent='♫';}else{audio.pause();musicBtn.textContent='🔇';}}catch(e){}});
 
-// Create a subtle champagne-gold glitter fall without affecting scrolling or controls.
-const glitterLayer = document.getElementById('glitterLayer');
-const glitterCount = window.matchMedia('(max-width:700px)').matches ? 26 : 42;
-for(let i=0;i<glitterCount;i++){
-  const g=document.createElement('span');
-  g.className='glitter';
-  const size=(Math.random()*3.2+1.3).toFixed(1)+'px';
-  g.style.setProperty('--size',size);
-  g.style.left=(Math.random()*100).toFixed(2)+'%';
-  g.style.setProperty('--opacity',(Math.random()*.48+.22).toFixed(2));
-  g.style.setProperty('--duration',(Math.random()*8+7).toFixed(2)+'s');
-  g.style.setProperty('--delay',(-Math.random()*14).toFixed(2)+'s');
-  g.style.setProperty('--drift',(Math.random()*80-40).toFixed(1)+'px');
-  glitterLayer.appendChild(g);
-}
-
+const target=new Date('2027-01-14T14:00:00+05:30').getTime();
+function countdown(){let d=Math.max(0,target-Date.now());document.getElementById('days').textContent=Math.floor(d/86400000);document.getElementById('hours').textContent=Math.floor(d/3600000)%24;document.getElementById('mins').textContent=Math.floor(d/60000)%60;document.getElementById('secs').textContent=Math.floor(d/1000)%60;}
+countdown();setInterval(countdown,1000);
 </script>
+
+<script id="weather-atmosphere-script">
+(function(){
+  const root=document.body;
+  const layer=document.createElement('div');
+  layer.id='weather-atmosphere';
+  layer.innerHTML='<div class="weather-sky"></div><div class="weather-sun-glow"></div><div class="weather-rain-dark"></div><div class="weather-moon"></div><div class="weather-lightning"></div>';
+  root.appendChild(layer);
+  const sky=layer.querySelector('.weather-sky'), moon=layer.querySelector('.weather-moon'), sun=layer.querySelector('.weather-sun-glow'), dark=layer.querySelector('.weather-rain-dark'), lightning=layer.querySelector('.weather-lightning');
+  const lat=10.0618, lon=76.6358; // Kothamangalam, Kerala
+  const tz='Asia/Kolkata';
+  let mode='clear', isNight=false;
+  function localParts(){
+    const parts=new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',month:'2-digit',hour12:false}).formatToParts(new Date());
+    const o={}; parts.forEach(p=>o[p.type]=p.value); return o;
+  }
+  function clearParticles(){layer.querySelectorAll('.weather-drop,.weather-star,.weather-cloud').forEach(e=>e.remove())}
+  function addStars(n){for(let i=0;i<n;i++){const s=document.createElement('i');s.className='weather-star';s.style.left=(Math.random()*100)+'%';s.style.top=(Math.random()*58)+'%';s.style.animationDelay=(Math.random()*3)+'s';s.style.opacity=(.35+Math.random()*.65).toFixed(2);layer.appendChild(s)}}
+  function addRain(n){for(let i=0;i<n;i++){const d=document.createElement('i');d.className='weather-drop weather-rain';d.style.left=(Math.random()*100)+'%';d.style.height=(10+Math.random()*22)+'px';d.style.animationDuration=(.45+Math.random()*.5)+'s';d.style.animationDelay=(-Math.random()*2)+'s';d.style.setProperty('--drift',(Math.random()*-35-8)+'px');layer.appendChild(d)}}
+  function addSnow(n){for(let i=0;i<n;i++){const d=document.createElement('i');d.className='weather-drop weather-snow';d.style.left=(Math.random()*100)+'%';d.style.animationDuration=(6+Math.random()*7)+'s';d.style.animationDelay=(-Math.random()*10)+'s';d.style.setProperty('--drift',(Math.random()*90-45)+'px');d.style.opacity=(.35+Math.random()*.65).toFixed(2);layer.appendChild(d)}}
+  function addClouds(n){for(let i=0;i<n;i++){const c=document.createElement('i');c.className='weather-cloud';c.style.width=(150+Math.random()*240)+'px';c.style.height=(45+Math.random()*80)+'px';c.style.left=(-30-Math.random()*50)+'vw';c.style.top=(8+Math.random()*45)+'%';c.style.opacity=(.08+Math.random()*.16).toFixed(2);c.style.animationDuration=(35+Math.random()*35)+'s';c.style.animationDelay=(-Math.random()*30)+'s';layer.appendChild(c)}}
+  function setAtmosphere(kind,night){
+    mode=kind; isNight=night; clearParticles();
+    layer.classList.add('active');
+    moon.style.opacity=night?'1':'0'; moon.style.transform=night?'scale(1)':'scale(.8)';
+    sun.style.opacity=(!night && kind==='clear')?'1':'0';
+    dark.style.opacity=(night||kind==='storm')?'.7':(kind==='rain'?'.35':'0');
+    sky.style.opacity='1';
+    if(night){sky.style.background='linear-gradient(180deg,rgba(10,22,45,.62),rgba(18,39,54,.12) 60%,transparent)';addStars(34);}
+    else if(kind==='clear'){sky.style.background='radial-gradient(circle at 50% 0%,rgba(255,218,145,.16),transparent 55%)';}
+    else if(kind==='cloud'){sky.style.background='linear-gradient(180deg,rgba(115,125,138,.16),transparent 60%)';addClouds(5);}
+    else if(kind==='rain'){sky.style.background='linear-gradient(180deg,rgba(80,100,125,.16),transparent 65%)';addClouds(4);addRain(55);}
+    else if(kind==='storm'){sky.style.background='linear-gradient(180deg,rgba(25,35,55,.34),rgba(10,18,32,.08))';addClouds(6);addRain(85);}
+    const now=new Date(); const month=new Intl.DateTimeFormat('en-GB',{timeZone:tz,month:'2-digit'}).format(now);
+    if(night && month==='12'){addSnow(34);}
+    if(kind==='snow'){addSnow(45);}
+  }
+  function classify(code){
+    if([95,96,99].includes(code)) return 'storm';
+    if([51,53,55,56,57,61,63,65,66,67,80,81,82].includes(code)) return 'rain';
+    if([1,2,3,45,48].includes(code)) return 'cloud';
+    return 'clear';
+  }
+  async function updateWeather(){
+    try{
+      const url='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&current=weather_code,is_day,temperature_2m,precipitation,rain,showers&timezone='+encodeURIComponent(tz);
+      const r=await fetch(url,{cache:'no-store'}); if(!r.ok) throw new Error('weather');
+      const j=await r.json(); const c=j.current||{};
+      const night=Number(c.is_day)===0;
+      setAtmosphere(classify(Number(c.weather_code)),night);
+    }catch(e){
+      const p=localParts(); const h=Number(p.hour||'12'); const night=h<6||h>=18; setAtmosphere('clear',night);
+    }
+  }
+  updateWeather(); setInterval(updateWeather,10*60*1000);
+  // Hidden visual test modes: add ?weather=night|rain|storm|cloud|sunny|snow to the URL.
+  const demo=new URLSearchParams(location.search).get('weather');
+  if(demo){const p=localParts();const night=demo==='night'||demo==='snow';setTimeout(()=>setAtmosphere(demo==='sunny'?'clear':demo==='snow'?'clear':demo,night),50)}
+
+})();
+</script>
+
+<script>
+/* Elegant pointer sparkle trail: no replacement cursor/icon */
+(function () {
+  if (window.matchMedia('(pointer: coarse)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let lastX = 0, lastY = 0, lastTime = 0;
+  document.addEventListener('pointermove', function (e) {
+    const now = performance.now();
+    if (now - lastTime < 45) return;
+    const dx = e.clientX - lastX, dy = e.clientY - lastY;
+    if (Math.hypot(dx, dy) < 3) return;
+
+    lastX = e.clientX; lastY = e.clientY; lastTime = now;
+
+    const spark = document.createElement('span');
+    spark.className = 'pointer-spark';
+    spark.style.left = e.clientX + 'px';
+    spark.style.top = e.clientY + 'px';
+
+    const size = (Math.random() * 3 + 3) + 'px';
+    spark.style.width = size;
+    spark.style.height = size;
+
+    document.body.appendChild(spark);
+    setTimeout(() => spark.remove(), 800);
+  }, {passive:true});
+})();
+</script>
+
 </body>
 </html>
