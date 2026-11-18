@@ -1,11 +1,5 @@
-Vinu & Aleena — DigiWed-inspired wedding invitation
+Vinu & Aleena Wedding Website — Version 2 (latest details)
 
-This rebuild follows the structure and visual hierarchy of the reference wedding invitation:
-hero → invitation → families → journey → occasions → countdown → gallery → RSVP → wishes → footer.
+Upload the contents of this ZIP to the existing GitHub Pages repository, replacing the previous index.html and adding assets/chibi-couple.png. Keep assets/a-thousand-years.mp3.
 
-It uses your uploaded photos and your uploaded A Thousand Years MP3.
-
-For GitHub Pages:
-1. Create a repository.
-2. Upload index.html and the assets folder.
-3. Enable Settings → Pages → Deploy from branch → main / root.
+This version updates the ceremony and reception details, family names, map links, countdown time, and adds the approved holding-hands chibi illustration. The original V1 design, music, weather atmosphere and champagne sparkle pointer trail are retained.
