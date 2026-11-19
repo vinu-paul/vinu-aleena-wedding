@@ -1,5 +1,8 @@
-Vinu & Aleena Wedding Website — Version 2 (latest details)
+Vinu & Aleena Wedding Invitation
 
-Upload the contents of this ZIP to the existing GitHub Pages repository, replacing the previous index.html and adding assets/chibi-couple.png. Keep assets/a-thousand-years.mp3.
+GitHub Pages files:
+- index.html
+- assets/a-thousand-years.mp3
 
-This version updates the ceremony and reception details, family names, map links, countdown time, and adds the approved holding-hands chibi illustration. The original V1 design, music, weather atmosphere and champagne sparkle pointer trail are retained.
+Upload the contents of this folder to the root of your GitHub repository.
+Keep the assets folder in the same location as index.html.
